@@ -1,0 +1,173 @@
+body{
+    background-image: url(/final/img/画板\ 4.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%,rgb(0, 0, 0));
+}
+
+
+
+.content img{
+    position: absolute;    
+    bottom: 3%;
+}
+
+.title{
+    position: relative;
+    top: 40vh;
+    right: 50vw;
+    transform: translate(50%,-50%);
+    z-index: 100;
+}
+
+.title h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 15px;
+    color: white;
+    text-align: center;
+}
+
+.title h1{
+    font-size: 11rem;
+    font-weight: 800;
+    letter-spacing: 40px;
+    color: white;
+    text-align: center;
+    margin: -20px 0;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: rgb(255, 255, 255,.7);
+    width: 60%;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.info-warp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 40vh;
+    z-index: 1;
+}
+
+.cta {
+    position: relative;
+    top: 45vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.cta button {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.cta button:hover {
+    background: darkslategray;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+@keyframes bottomIn {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.back-1{
+    animation: bottomIn 1s ease-out forwards ;
+}
+.back-2{
+    animation: bottomIn 1.3s ease-out forwards;
+}
+.back-3{
+    animation: bottomIn 1.5s ease-out forwards;
+}
+
+@keyframes backgroundImage {
+    from{
+        background-position: top;
+    }
+    to{
+        background-position: 50% 14%;
+    }
+}
+
+body{
+    animation: backgroundImage 1.6s ease-out forwards;
+}
+
+@keyframes topIn {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav{
+    animation: topIn 1.2s ease-out forwards;
+}
+
+@keyframes bottomInText {
+    from{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h3{
+    animation: bottomInText 1s ease-out forwards;
+}
+h2{
+    animation: bottomInText 1.2s ease-out forwards;
+}
+
+p{
+    animation: bottomInText 1.2s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}

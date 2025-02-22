@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg{
+    z-index: -3;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    position: relative;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.slide .image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.slide .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom,rgba(20,20,20,.7),transparent);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.slide:hover .image{
+    transform: scale(1.1);
+}
+
+.slide:hover .overlay{
+    opacity: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    .flex-column{
+        flex-direction: column;
+        height: 400%;
+    }
+}

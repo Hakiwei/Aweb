@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    background-color: rgba(250, 235, 215, 0.459);
+    /* background-image: url(/final/img/seaback.jpg); */
+    height: 100vh;
+    backdrop-filter: blur(4px);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.border{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 30vw;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 35%;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+textarea{
+    border: 5px inset gray;
+    width: 24.7vw;
+    height: 28vh;
+    resize: none;
+    font-size: 2.2vh;
+}
+
+input{
+    border: 5px inset gray;
+    width: 24.7vw;
+    height: 3vh;
+    font-size: 2.2vh;
+}
+
+h1{
+    margin-top: -6vh;
+}
+
+.margin{
+    position: relative;
+    top: -10vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.text{
+    left: -11vw;
+}
+
+.e-text{
+    left: -10vw;
+}
+
+.sub{
+    width: 8vw;
+    height: 3vh;
+}
+
+@media screen and (min-width: 768px) {
+    .sub{
+        width: 8vw;
+        height: 5vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sub{
+        width: 120px;
+        height: 50px;
+    }
+}
+
+.shuXiang{
+    flex-direction: column;
+    align-items: center; 
+}
