@@ -1,5 +1,5 @@
 body{
-    background-image: url(/final/img/画板\ 4.png);
+    background-image: url(/img/picture4.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -17,11 +17,10 @@ body::after{
     background: linear-gradient(transparent 50%,rgb(0, 0, 0));
 }
 
-
-
 .content img{
     position: absolute;    
     bottom: 3%;
+    user-select: none;
 }
 
 .title{
@@ -76,6 +75,7 @@ p{
     justify-content: center;
     width: 100%;
     z-index: 1;
+    user-select: none;
 }
 
 .cta button {
@@ -106,7 +106,7 @@ p{
         transform: translateY(200px);
     }
     to{
-        transform: translateY(0);
+        transform: translateY(-10vh);
     }
 }
 
@@ -118,19 +118,6 @@ p{
 }
 .back-3{
     animation: bottomIn 1.5s ease-out forwards;
-}
-
-@keyframes backgroundImage {
-    from{
-        background-position: top;
-    }
-    to{
-        background-position: 50% 14%;
-    }
-}
-
-body{
-    animation: backgroundImage 1.6s ease-out forwards;
 }
 
 @keyframes topIn {
