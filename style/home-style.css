@@ -8,15 +8,9 @@ body::after{
     background: linear-gradient(transparent 50%,rgb(0, 0, 0));
 }
 
-/* .content img{
-    position: absolute;    
-    bottom: 3%;
-    user-select: none;
-} */
-
 .background-container{
     position: absolute;
-    background-image: url(/img/picture4.png);
+    background-image: url(/Aweb/img/picture4.png);
     background-size: cover;
     height: 100vh;
     top: 0;
@@ -29,7 +23,7 @@ body::after{
 
 .img1{
     position: absolute;
-    background-image: url(/img/picture1.png);
+    background-image: url(/Aweb/img/picture1.png);
     background-size: cover;
     height: 100vh;
     top: 0;
@@ -39,7 +33,7 @@ body::after{
 }
 .img2{
     position: absolute;
-    background-image: url(/img/picture2.png);
+    background-image: url(/Aweb/img/picture2.png);
     background-size: cover;
     height: 100vh;
     top: 0;
@@ -49,7 +43,7 @@ body::after{
 }
 .img3{
     position: absolute;
-    background-image: url(/img/picture3.png);
+    background-image: url(/Aweb/img/picture3.png);
     background-size: cover;
     height: 100vh;
     top: 0;
